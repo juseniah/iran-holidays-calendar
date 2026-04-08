@@ -1,0 +1,15 @@
+{
+  "name": "iran-holidays-calendar",
+  "version": "1.0.0",
+  "description": "Generate an ICS calendar for Persian cultural holidays",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "generate": "npm run build && node dist/generateCalendar.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.6.0",
+    "typescript": "^5.9.3"
+  }
+}
