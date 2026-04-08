@@ -45,9 +45,28 @@ The flags also support `--startYear=2028` and `--endYear=2032`.
 npm run build
 ```
 
-## Import into iPhone Calendar
+## Add to iPhone Calendar
+
+### One-time import
 
 1. Generate the `.ics` file.
 2. Send or save `persian-holidays.ics` somewhere your iPhone can access, such as iCloud Drive, AirDrop, Mail, or Files.
 3. Open the file on iPhone and choose to add all events to Calendar.
 4. Pick an existing calendar or create a new one for these holidays.
+
+### Subscribe from a public URL
+
+Use this hosted calendar URL:
+
+`https://raw.githubusercontent.com/juseniah/iran-holidays-calendar/main/persian-holidays.ics`
+
+On iPhone:
+
+1. Open the Calendar app.
+2. Tap `Calendars`.
+3. Tap `Add Calendar`.
+4. Tap `Add Subscription Calendar`.
+5. Paste the URL above.
+6. Tap `Subscribe`.
+
+This subscription uses the published `.ics` file from GitHub, so updates appear when the file is regenerated, committed, and pushed to `main`.
